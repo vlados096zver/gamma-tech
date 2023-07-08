@@ -444,6 +444,9 @@ body {
   }
   &__text {
     max-width: 560px;
+    @include media(sm) {
+      margin: 0 auto;
+    }
     p {
       font-size: 18px;
       line-height: 1.7;
