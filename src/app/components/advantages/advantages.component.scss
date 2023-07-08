@@ -1,0 +1,43 @@
+@import 'variables';
+
+:host {
+  display: block;
+  width: calc(100% / 3 - 40px);
+  margin: 0 20px;
+  margin-bottom: 100px;
+  @include media(md) {
+    width: calc(100% / 2 - 40px);
+  }
+  @include media(sm) {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+.advantages {
+  &__image {
+    margin-bottom: 30px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 900;
+  }
+  &__text {
+    p {
+      font-size: 18px;
+      line-height: 1.65;
+      text-align: center;
+      @include media(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+}

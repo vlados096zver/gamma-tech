@@ -1,0 +1,177 @@
+
+<section class="block">
+  <div class="block__container">
+    <app-header></app-header>
+    <div class="container">
+      <div class="block__wrap">
+        <div class="block__item block__item--content">
+          <p class="block__title">Gamma.Tech</p>
+          <p class="block__subtitle">Найкращий спосіб діджіталізації бізнесу</p>
+          <div class="block__text">
+            <p>Дуже важливо, щоб Ваш проект розробили професіонали, адже
+              тільки так Ви не зіткнетесь з великою кількістю помилок</p>
+          </div>
+          <button class="btn" (click)="menuService.openFeedback()">Бажаю сайт!</button>
+        </div>
+        <div class="block__item block__item--image">
+          <img src="assets/img/bg-info.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="numbers">
+  <div class="container">
+    <p class="title title--inner">Важливі цифри</p>
+    <p class="numbers__text">Наші досягнення виражені у цифрах</p>
+    <div class="numbers__wrap">
+      <ng-container *ngFor="let item of numbers; let index = index">
+        <app-numbers [item]="item" [index]="index"></app-numbers>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<section class="advantages">
+  <div class="container">
+    <p class="title">Чому обирають нас?</p>
+    <div class="advantages__wrap">
+      <ng-container *ngFor="let item of advantages">
+        <app-advantages [item]="item"></app-advantages>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<section class="headline">
+  <div class="container container--inner">
+    <div class="headline__holder">
+      <div class="container">
+        <div class="headline__wrap">
+          <div class="headline__item headline__item--content">
+            <p class="title title--inner">Headline</p>
+            <div class="headline__text">
+              <p>Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах. Lorem Ipsum является текст-заполнитель обычно.</p>
+              <button (click)="menuService.openFeedback()" class="headline__link">
+                <span>Отримати консультацію</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                  <path d="M16.7858 11.6298L20.2314 8.18419C20.7909 7.59788 21.1031 6.81859 21.1031 6.00816C21.1031 5.19773 20.7909 4.41843 20.2314 3.83213L16.7858 0.386522C16.5385 0.139119 16.2031 8.24781e-05 15.8533 3.66834e-08C15.5035 -8.24048e-05 15.168 0.138796 14.9205 0.386083C14.6731 0.63337 14.5341 0.968809 14.534 1.31861C14.5339 1.66841 14.6728 2.00391 14.9201 2.25132L17.3643 4.69638L1.31881 4.71661C0.969038 4.71661 0.633594 4.85555 0.38627 5.10288C0.138945 5.3502 0 5.68564 0 6.03541C0 6.38518 0.138945 6.72063 0.38627 6.96795C0.633594 7.21528 0.969038 7.35422 1.31881 7.35422L17.3476 7.334L14.9201 9.765C14.6799 10.0137 14.5469 10.3469 14.55 10.6927C14.553 11.0384 14.6917 11.3692 14.9362 11.6137C15.1807 11.8582 15.5115 11.9969 15.8573 12C16.203 12.003 16.5371 11.87 16.7858 11.6298Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="headline__item headline__item--form">
+              <app-contact-form class="headline--contact"></app-contact-form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects">
+  <div class="container">
+    <p class="title">Який проект Вам потрібен?</p>
+    <div class="projects__wrap">
+      <ng-container *ngFor="let item of projects; let index = index">
+        <app-projects [item]="item" [index]="index"></app-projects>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<section class="user">
+  <div class="container">
+    <div class="user__wrap">
+      <div class="user__item user__item--content">
+        <p class="title title--inner">Керуй сайтом зручно</p>
+        <div class="user__text">
+          <p>Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах. Lorem Ipsum является текст-заполнитель обычно. Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах. Lorem Ipsum является текст-заполнитель обычно.</p>
+        </div>
+      </div>
+      <div class="user__item user__item--gallery">
+        <div class="user__box">
+          <img src="assets/img/user_1.png">
+        </div>
+        <div class="user__box">
+          <img src="assets/img/user_2.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <p class="title">Відповіді на питання?</p>
+    <div class="faq__wrap">
+      <ng-container *ngFor="let item of faq">
+        <app-faq [item]="item"></app-faq>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="container container--inner">
+    <div class="info__holder">
+      <div class="container">
+        <div class="info__wrap">
+          <div class="info__item info__item--image">
+            <img src="assets/img/bg-info.png" alt="info">
+          </div>
+          <div class="info__item info__item--content">
+            <p class="title title--inner">Headline</p>
+            <div class="headline__text">
+              <p>Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах. Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах.</p>
+              <button (click)="menuService.openFeedback()" class="headline__link">
+                <span>Отримати консультацію</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                  <path d="M16.7858 11.6298L20.2314 8.18419C20.7909 7.59788 21.1031 6.81859 21.1031 6.00816C21.1031 5.19773 20.7909 4.41843 20.2314 3.83213L16.7858 0.386522C16.5385 0.139119 16.2031 8.24781e-05 15.8533 3.66834e-08C15.5035 -8.24048e-05 15.168 0.138796 14.9205 0.386083C14.6731 0.63337 14.5341 0.968809 14.534 1.31861C14.5339 1.66841 14.6728 2.00391 14.9201 2.25132L17.3643 4.69638L1.31881 4.71661C0.969038 4.71661 0.633594 4.85555 0.38627 5.10288C0.138945 5.3502 0 5.68564 0 6.03541C0 6.38518 0.138945 6.72063 0.38627 6.96795C0.633594 7.21528 0.969038 7.35422 1.31881 7.35422L17.3476 7.334L14.9201 9.765C14.6799 10.0137 14.5469 10.3469 14.55 10.6927C14.553 11.0384 14.6917 11.3692 14.9362 11.6137C15.1807 11.8582 15.5115 11.9969 15.8573 12C16.203 12.003 16.5371 11.87 16.7858 11.6298Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="container container--inner">
+    <p class="title">Як ми працюємо?</p>
+    <div class="work__wrap">
+      <ng-container *ngFor="let item of work">
+        <app-work [item]="item"></app-work>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="container">
+    <p class="title">Наша команда</p>
+    <div class="team__wrap">
+      <ng-container *ngFor="let item of team">
+        <app-team [item]="item"></app-team>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<app-contact-information></app-contact-information>
+<app-footer></app-footer>
+
+<app-feedback-details [class.active]="menuService.showFeedback" class="modal"></app-feedback-details>
+<app-menu-details [class.active]="menuService.showMenu" class="modal"></app-menu-details>
+
+<button appScroll class="scroll-area" (click)="scrollUp()">
+  <svg class="icon-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+    <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+  </svg>
+  <svg class="icon-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+    <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+  </svg>
+</button>

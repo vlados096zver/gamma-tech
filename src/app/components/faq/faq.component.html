@@ -1,0 +1,11 @@
+<div class="faq__holder" (click)="openDetails(item)" [class.isOpen]="item.isOpen">
+  <div class="faq__image">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M20 9.16667H10.8333V0H9.16667V9.16667H0V10.8333H9.16667V20H10.8333V10.8333H20V9.16667Z" fill="black"/>
+    </svg>
+  </div>
+  <p class="faq__title">{{item.title}}</p>
+  <div class="faq__text">
+    <p>{{item.text}}</p>
+  </div>
+</div>

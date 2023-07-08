@@ -1,0 +1,67 @@
+@import 'variables';
+
+.contact {
+  background-image: url(/assets/img/decor-numbers.png);
+  background-color: #3961F0;
+  padding-top: 65px;
+  padding-bottom: 94px;
+  @include media(mdx) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  &__text {
+    max-width: 894px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 44px;
+    margin: 0 auto;
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #fff;
+      text-align: center;
+      @include media(md) {
+        font-size: 18px;
+      }
+      @include media(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__phone {
+    display: block;
+    width: max-content;
+    font-size: 64px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-weight: 100;
+    transition: 0.25s color;
+    @include media(sm) {
+      font-size: 32px;
+    }
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  &__email {
+    display: block;
+    width: max-content;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    font-weight: 300;
+    transition: 0.25s color;
+    @include media(sm) {
+      font-size: 24px;
+    }
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}

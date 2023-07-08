@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+.socials {
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    transition: 0.25s background-color;
+    svg {
+      width: 14px;
+      height: 14px;
+      transition: 0.25s fill;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<div class="line__wrap">
+  <label [for]="id"  class="line__label">{{label}}</label>
+  <p class="error" *ngIf="submitted && control.errors && control.errors['required']">Поле обов'язкове</p>
+  <p class="error" *ngIf="submitted && control.errors && control.errors['pattern']">Неправильний формат пошти</p>
+</div>
+<input [class.error]="submitted && control.errors && control.errors['required'] || submitted && control.errors && control.errors['pattern']" [id]="id" [formControl]="control" type="text" class="line__input">

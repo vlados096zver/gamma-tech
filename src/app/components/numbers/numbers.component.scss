@@ -1,0 +1,45 @@
+@import 'variables';
+
+:host {
+  display: block;
+  width: calc(100% / 4);
+  margin-bottom: 40px;
+  &:not(:last-child) {
+    border-right: 1px solid #fff;
+    @include media(sm) {
+      border-right: none;
+    }
+  }
+  &:nth-child(even) {
+    @include media(md) {
+      border-right: transparent;
+    }
+  }
+  @include media(md) {
+    width: calc(100% / 2);
+  }
+  @include media(sm) {
+    width: 100%;
+  }
+}
+
+.numbers {
+  &__count {
+    font-size: 61px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    font-weight: 900;
+    @include media(mdx) {
+      font-size: 54px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+  }
+}

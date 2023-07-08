@@ -1,0 +1,62 @@
+@import 'variables';
+
+:host {
+  position: relative;
+  display: block;
+  width: calc(100% / 4 - 30px);
+  padding-top: 80px;
+  margin: 0 15px;
+  margin-bottom: 40px;
+  @include media(md) {
+    width: calc(100% / 2 - 30px);
+  }
+  @include media(sm) {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  &:not(:last-child) {
+    @include media(sm) {
+      margin-bottom: 40px;
+    }
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3961F0;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 18px;
+    width: calc(100% - 70px);
+    height: 3px;
+    border-top: 4px dotted rgba(57, 97, 240, 0.5);
+  }
+}
+
+.work {
+  &__title {
+    font-size: 24px;
+    line-height: 1.25;
+    color: #111827;
+    padding-bottom: 20px;
+    font-weight: 900;
+  }
+  &__text {
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #111827;
+      @include media(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+}

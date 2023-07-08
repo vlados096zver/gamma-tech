@@ -1,0 +1,5 @@
+<div class="area__wrap">
+  <label [for]="id"  class="area__label">{{label}}</label>
+  <p class="error" *ngIf="submitted && control.errors && control.errors['required']">Поле обов'язкове</p>
+</div>
+<textarea [class.error]="submitted && control.errors && control.errors['required']" [id]="id" [formControl]="control" class="area__input"></textarea>

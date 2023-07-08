@@ -1,0 +1,8 @@
+<p class="numbers__count">
+  <span appNumber
+        class="numbers{{index}}"
+        [count]="item.count"
+        [elemClass]="'numbers' + index">{{item.count}}</span>
+  <span *ngIf="item.plus">+</span>
+</p>
+<p class="numbers__title">{{item.title}}</p>
